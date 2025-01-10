@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Enhanced Support Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #63b850; /* Light green background */
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            width: 100px; /* Smaller logo size */
+            display: block;
+            margin: 0 auto;
+        }
+        .navbar {
+            margin-top: 5px;
+            text-align: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333; /* Dark background */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .navbar li {
+            display: inline;
+            margin: 0;
+        }
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #575757; /* Lighter background on hover */
+        }
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .main-content img { 
+            width: 20%; 
+            height: auto; 
+            border-radius: 10px; 
+            margin-top: 20px; 
+        }
+        .copy-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .copy-text textarea {
+            width: 200px;
+            height: 20px;
+            resize: none;
+        }
+        .copy-button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            background-color: rgb(83, 200, 74);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .copy-button:hover {
+            background-color: #52f440; /* Medium green */
+        }
+        .link-boxes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .link-box {
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+        }
+        .link-box a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .link-box a:hover {
+            color: #fff;
+
+        }
+    .main-content-img { 
+        width: 150px; 
+        height: 150px; 
+        } 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="stepwell.png" alt="Step Well Logo" class="logo">
+        <h1>Step Well Resources</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="groups.html">Join Groups</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="signin.html">Sign In / Create Account</a></li>
+            </ul>
+        </nav> 
+<h2>About StepWell</h2> <p><strong></strong><br> StepWell is a platform dedicated to guiding individuals through their rehabilitation and recovery journeys. Whether you’re recovering from an injury, managing a chronic condition, or rebuilding strength, our mission is to provide expert guidance, tailored resources, and compassionate support to help you move forward with confidence.</p> <img src="ban.jpg" alt="Banner Image" class="main-content-img"> <p><strong>Our Unique Approach</strong><br> StepWell leverages cutting-edge technology, including blockchain, to offer innovative tools for recovery. Our platform integrates a secure crypto token system to enhance the user experience. This token is not about rewards but about creating a transparent and accessible ecosystem for tracking progress, accessing resources, and ensuring accountability in your recovery journey.</p> <p><strong>Empowering Recovery with Blockchain</strong><br> The StepWell crypto token is designed to empower users by facilitating access to rehabilitation programs, expert consultations, and progress tracking within a decentralized and secure environment. It represents our commitment to using technology to make recovery resources more accessible and efficient for everyone.</p> <p><strong>Our Vision</strong><br> At StepWell, we believe recovery is a journey best taken with the right support and tools. By integrating innovative technologies like blockchain with expert care, we aim to transform the way individuals approach rehabilitation, helping them take steady, confident steps toward a healthier future.</p> <p><strong>The Role of Crypto in Recovery</strong><br> StepWell’s integrated crypto token is at the heart of our ecosystem, providing a secure, efficient, and transparent framework for users to navigate their recovery journey. Unlike reward-based systems, our token is a functional utility designed specifically to enhance access to rehabilitation tools and services.</p> <p><strong>Community Support and Collaboration</strong><br> Tokens can be used to participate in community-driven initiatives, such as sharing progress, accessing peer-to-peer support, or contributing to research projects that improve recovery outcomes for others.</p>
+            <div class="copy-text">
+            <textarea id="copy-textarea">CA</textarea>
+            <button class="copy-button" onclick="copyText()">Copy</button>
+        </div>
+        <div class="link-boxes">
+            <div class="link-box"><a href="https://t.me/aaa210010" target="_blank">Telegram</a></div>
+            <div class="link-box"><a href="https://x.com/stepwell__?s=21" target="_blank">X</a></div>
+            <div class="link-box"><a href="https://www.facebook.com/share/g/19f5mzCq8d/?mibextid=wwXIfr" target="_blank">Facebook</a></div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Enhanced Support Group. All rights reserved.</p>
+    </footer>
+    <script>
+        function copyText() {
+            var copyTextarea = document.getElementById("copy-textarea");
+            copyTextarea.select();
+            document.execCommand("copy");
+            alert("Text copied to clipboard!");
+        }
+    </script>
+</body>
+</html>

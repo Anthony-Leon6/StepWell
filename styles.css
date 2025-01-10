@@ -1,0 +1,161 @@
+body {
+  font-family: 'Cinzel', 'Playfair Display', 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  color: #f4f4f4;
+  text-shadow: 0 0 10px rgba(125, 255, 118, 0.5);
+}
+
+.header {
+  background: linear-gradient(45deg, #00c1df, #00b9c3);
+  
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(125, 255, 93, 0.8);
+  letter-spacing: 1px;
+  padding: 1em 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header { background: linear-gradient(45deg, #4CAF50, #81C784); color: white; text-align: center; padding: 2em 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-bottom: 3px solid #4CAF50; } .header h1 { font-size: 2.5em; margin: 0.5em 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 10px white, 0 0 20px white, 0 0 30px white; animation: glow 1.5s infinite; } .header p { font-size: 1.2em; margin: 0; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), 0 0 5px white; } @keyframes glow { 0%, 100% { text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 10px white, 0 0 20px white, 0 0 30px white; } 50% { text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 20px white, 0 0 40px white, 0 0 60px white; } }
+.logo {
+  margin-bottom: 1em;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgb(121, 255, 98);
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #8ff28f;
+  color: #282c34;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: #333;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgb(108, 255, 111);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+textarea, input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #8dff63;
+  background-color: #282c34;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #70fc7c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8cff62;
+}
+.post { 
+  margin-top: 20px; 
+} .comment-form { 
+  margin-top: 10px; 
+} .comments-container { 
+  margin-top: 10px; 
+  padding-left: 20px; 
+  border-left: 2px solid #79ff6c;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#authContainer, #postContainer, #commentsContainer {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}

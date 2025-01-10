@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Enhanced Support Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar {
+            margin-top: 5px;
+            text-align: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .navbar li {
+            display: inline;
+            margin: 0;
+        }
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .comment-profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .comment {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .comment-reply {
+            margin-left: 60px;
+        }
+        .post {
+            margin-bottom: 20px;
+        }
+        .post-actions, .comment-actions {
+            margin-left: auto;
+            display: flex;
+        }
+        .post-actions button, .comment-actions button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Forum - Enhanced Support Group</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="groups.html">Join Groups</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="signin.html">Sign In / Create Account</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="posts-section">
+            <h2>Posts</h2>
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="Post Title" required>
+                <textarea id="post-content" placeholder="Post Content" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        <section class="display-section">
+            <h2>Forum Posts</h2>
+            <div id="display-container"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Enhanced Support Group. All rights reserved.</p>
+    </footer>
+    <script src="comments.js"></script>
+</body>
+</html>

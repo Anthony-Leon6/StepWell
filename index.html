@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Well and Wellness</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #70bf5e; /* Light green background */
+            color: #ffffff; /* Make all text black */
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            width: 100px; /* Smaller logo size */
+            display: block;
+            margin: 0 auto;
+        }
+        .navbar {
+            margin-top: 5px;
+            text-align: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333; /* Dark background */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .navbar li {
+            display: inline;
+            margin: 0;
+        }
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #575757; /* Lighter background on hover */
+        }
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .forum-button, .support-groups-button, .resources-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000; /* Black text color */
+            background: linear-gradient(45deg, #75f56b, #75ed6d);
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(89, 255, 83, 0.5);
+            transition: all 0.3s ease;
+        }
+        .forum-button:hover, .support-groups-button:hover, .resources-button:hover {
+            background: linear-gradient(45deg, #7dfa72, #7eed6d);
+        }
+        .about-button {
+            display: inline-block; 
+            padding: 15px 30px; 
+            margin: 20px 0; 
+            font-family: 'Arial', sans-serif; 
+            font-size: 1.2em; 
+            font-weight: bold; 
+            text-decoration: none; 
+            color: #000; /* Black text color */
+            background: linear-gradient(45deg, #75f56b, #75ed6d); 
+            border-radius: 25px; 
+            box-shadow: 0 0 10px rgba(89, 255, 83, 0.5); 
+            transition: all 0.3s ease; 
+        } 
+        .about-button:hover { 
+            background: linear-gradient(45deg, #7dfa72, #7eed6d); 
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="stepwell.png" alt="Step Well and Wellness Logo">
+        </div>
+        <h1>Step-Well & Well-Ness</h1>
+        <p>Journey to Better Well-being</p>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="groups.html">Support Groups</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="forum">
+            <h2>Step Well Forums</h2>
+            <p>Join our support forums to share and connect with others.</p>
+            <a href="forum.html" class="forum-button">Enter Forums</a>
+        </section>
+        <section class="support-groups">
+            <h2>Support Groups</h2>
+            <p>Connect with others in our supportive community groups.</p>
+            <a href="groups.html" class="support-groups-button">Join Groups</a>
+        </section>
+        <section class="resources">
+            <h2>Step Well Resources</h2>
+            <p>Access our collection of wellness resources and guides.</p>
+            <a href="resources.html" class="resources-button">View Resources</a>
+        </section>
+        <section class="account">
+            <h2>Sign In or Create an Account</h2>
+            <form id="option-form">
+                <button type="button" id="sign-in-button" style="color: black;">Sign In</button>
+                <button type="button" id="create-account-button" style="color: black;">Create an Account</button>
+            </form>
+        </section>
+        <section class="about"> 
+            <h2>About Step Well</h2> 
+            <a href="about.html" class="about-button">About</a> 
+        </section>
+        <script>
+            document.getElementById('sign-in-button').addEventListener('click', function() {
+                window.location.href = 'signin.html';
+            });
+        
+            document.getElementById('create-account-button').addEventListener('click', function() {
+                window.location.href = 'signin.html';
+            });
+        </script>
+        
+    </main>
+    <footer class="footer">
+        <p>&copy; Step Well Support Group. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
