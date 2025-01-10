@@ -11,48 +11,41 @@
             background-color: #333;
             color: rgb(255, 255, 255); /* Ensure the text is readable on the dark background */
         }
+        .logo img {
+            height: 65px;
+            transition: transform 0.3s ease;
+        }
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+            background-color: rgb(98, 255, 98);
+        }
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="stepwell.png" alt="Step-Well Logo">
-            </div>
-            <style>
-            .logo img {
-                height: 65px;
-                transition: transform 0.3s ease;
-            }
-
-            .logo img:hover {
-                transform: scale(1.1);
-            }
-
-            .nav-links {
-                display: flex;
-                gap: 30px;
-                list-style: none;
-            }
-
-            .nav-links a {
-                color: rgb(0, 0, 0);
-                text-decoration: none;
-                font-weight: 600;
-                padding: 8px 15px;
-                border-radius: 20px;
-                transition: background 0.3s ease;
-            }
-
-            .nav-links a:hover {
-                background: rgba(255, 255, 255, 0.2);
-            }
-            </style>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resources.html">Resources</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="stepwell.png" alt="Step-Well Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
     </header>
 
     <main>
